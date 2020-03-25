@@ -18,7 +18,7 @@ class Employees extends Component {
   render() {
     return (
       <div>
-        <h2>Employees</h2>
+        <h2>Employees List</h2>
         <ul>
         {this.state.employees.map(employee => 
           <li key={employee.ID}>
