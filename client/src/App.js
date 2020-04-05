@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import fire from '.src/config/fire'
-import Login from '.src/Login.js';
-import Home from '.src/Home.js';
+import fire from '/Users/hamza/Desktop/work-network/client/src/config/fire.js';
+import Login from "./components/Login";
+import Home from "./components/Home";
+
 
 class App extends Component {
 

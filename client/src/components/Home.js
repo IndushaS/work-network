@@ -1,5 +1,5 @@
 import React from 'react';
-import fire from './config/fire';
+import fire from '/Users/hamza/Desktop/work-network/client/src/config/fire.js';
 
 class Home extends React.Component {
 
@@ -8,7 +8,7 @@ class Home extends React.Component {
   logout() {
     fire.auth().signOut();
   }
-
+ 
 
 
   render() {

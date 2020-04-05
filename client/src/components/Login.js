@@ -1,6 +1,6 @@
 import React from 'react';
-import fire from './config/fire';
-
+import fire from '/Users/hamza/Desktop/work-network/client/src/config/fire.js';
+   
 class Login extends React.Component {
 
   signUp() {
