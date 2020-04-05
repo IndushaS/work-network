@@ -34,11 +34,35 @@ app.get('/api/hello', (req, res, next) => {
   
 });
 
+app.get('/api/getPosts', (req, res, next) => {
+
+    connection.query(
+        "SELECT * FROM Post", function(error, results, fields) {
+            if (error) throw error;
+            res.json(results);
+        }
+      );
+  
+});
+
 app.post('/api/world', (req, res) => {
   console.log(req.body);
   res.send(
     `I received your POST request. This is what you sent me: ${req.body.post}`,
   );
 });
+
+app.get('/api/addPost',(req,res)=>{
+    const {Post_ID, Group_ID, Employee_ID, Department_ID, Branch_ID, PostalCode, Tag, Date, PostText}=req.query;
+    const Insert_Post="INSERT INTO Post (Post_ID, Group_ID, Employee_ID, Department_ID, Branch_ID, PostalCode,Tag,Date,PostText) VALUES ('"+Post_ID+"','"+ Group_ID+"','"+ Employee_ID+"','"+ Department_ID+"','"+ Branch_ID+"','"+PostalCode+"','"+Tag+"','"+Date+"','"+PostText+"')";
+    connection.query(Insert_Post, (err, results)=>{
+        if(err){
+            return res.send(err)
+        }
+        else{
+            return res.send('successfully added post')
+        }
+    })
+})
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
