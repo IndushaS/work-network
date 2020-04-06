@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import fire from '/Users/hamza/Desktop/work-network/client/src/config/fire.js';
-import Login from "./components/Login";
-import Home from "./components/Home";
+import fire from "./config/fire.js";
+import './App.css';
+import Login from './components/Login';
+import Main from './components/main';
 
 
 class App extends Component {
@@ -28,11 +29,14 @@ class App extends Component {
       }
     })
   }
+  
 
   render() {
     return (
-      <div className="App">
-        { this.state.user ? ( <Home /> ) : ( <Login /> ) }
+     
+     <div className="Web">
+        { this.state.user ? ( <Main /> ) : ( <Login /> ) }
+        
       </div>
     );
   }

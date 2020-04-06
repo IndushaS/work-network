@@ -17,12 +17,13 @@ class Employees extends Component {
 
   render() {
     return (
-      <div>
-        <h2>Employees List</h2>
+      <div >
         <ul>
         {this.state.employees.map(employee => 
-          <li key={employee.ID}>
-              <p>ID: {employee.ID} , Name: {employee.Name} , Role: {employee.Role}</p></li>
+          <li className="User" key={employee.ID}>
+              <h1 >{employee.Name} | {employee.Role}</h1>
+              <h2>Management Engineering Intern</h2>
+          </li>
         )}
         </ul>
       </div>

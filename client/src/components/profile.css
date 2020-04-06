@@ -1,0 +1,70 @@
+
+.App {
+    position: absolute;
+    width: 60%;
+    height: 90%;
+    top: 5%;
+    left: 3%;
+    background-color: #C9DCE7;
+    z-index: -2;
+    box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.75);
+  
+  }
+  
+  .Right {
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    top: 5%;
+    left: 67%;
+    background-color: #C9DCE7;
+    z-index: -2;
+    border: 00.1px solid #d3d3d4;
+    box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.75);
+  
+  }
+  
+  .Header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./mississauga.png");
+    height: 70%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+  }
+  
+  
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  

@@ -1,6 +1,7 @@
 import React from 'react';
-import fire from '/Users/hamza/Desktop/work-network/client/src/config/fire.js';
-   
+import fire from '../config/fire.js';
+import './Login.css';
+
 class Login extends React.Component {
 
   signUp() {
@@ -29,18 +30,19 @@ class Login extends React.Component {
 
   render() {
     return (
-      <div style={{ textAlign: 'center' }}>
-        <div>
-          <div>Email</div>
-          <input id="email" placeholder="Enter Email.." type="text"/>
-        </div>
-        <div>
-          <div>Password</div>
-          <input id="password" placeholder="Enter Password.." type="password"/>
-        </div>
-        <button style={{margin: '10px'}} onClick={this.login}>Login</button>
-        <button style={{margin: '10px'}} onClick={this.signUp}>Sign Up</button>
+
+      <div class="box">
+        <h1>Welcome to WorkNet</h1>
+    
+        <input class="email" id="email" placeholder="Enter Email.." type="text" />
+   
+        <input class="email" id="password" placeholder="Enter Password.." type="password" />
+      
+      <a href="#" onClick={this.login}><div class="btn">Sign In</div></a>
+
+      <a href="#" onClick={this.signUp}><div id="btn2">Sign Up</div></a>    
       </div>
+      
     )
   }
 }

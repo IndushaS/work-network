@@ -1,5 +1,5 @@
 import React from 'react';
-import fire from '/Users/hamza/Desktop/work-network/client/src/config/fire.js';
+import fire from '../config/fire.js';
 
 class Home extends React.Component {
 
@@ -14,18 +14,7 @@ class Home extends React.Component {
   render() {
     return (
       <div style={{textAlign: 'center'}}>
-        <h1>You Are Logged In</h1>
-
-        <button onClick = {this.logout}>Logout</button>
-
-
-   
-          <p>ID: {fire.auth().currentUser.uid}</p>
-
-   
-       
-
-
+      <a onClick = {this.logout}>Logout</a>
       </div>
     )
   }

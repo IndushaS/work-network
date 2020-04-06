@@ -1,0 +1,49 @@
+.main{
+    min-width: 500px;;
+}
+.list{
+  display: flex;
+  min-width: 500px;
+  background: #fff;
+  border: 1px solid #D3D3D3;
+
+}
+.avatar{
+    margin: 30px;
+    margin-right: 40px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    text-align: left;
+}
+.post{
+    width: 600px;
+    margin: auto;
+    overflow-y: scroll;
+    height:300px;
+    margin-left:10px;
+    
+}
+.postItem{
+    display: flex;
+    
+    padding: 1em;
+    border: 1px solid #D3D3D3;
+}
+.postText{
+    display: flex;
+    flex-direction: column;
+    order: 2;
+}
+.postAvatar{
+   margin: 20px;
+    
+}
+ul {
+    width: auto;
+ }
+.RecentPosts{
+    margin-top: -60px;
+}

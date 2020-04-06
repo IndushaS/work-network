@@ -1,0 +1,27 @@
+ul {
+    padding:0;
+    list-style:none;
+    width: 30%;
+    margin:auto;
+    display: inline;
+  }
+  
+  li{
+    font-size:1.5rem;
+    line-height: 3rem;
+  }
+
+.User {
+    color: white;
+    margin: 3% 0 0 5%;
+    text-decoration: none;
+}
+
+.Contact {
+  position: fixed;
+  font-size:1.2rem;
+  text-align: right;
+  color: white;
+  margin: -67% 0 0 55%;
+
+}
